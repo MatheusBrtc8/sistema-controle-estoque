@@ -5,8 +5,17 @@ function adicionarProduto() {
   let lista = document.getElementById("lista");
 
   let item = document.createElement("li");
-  item.textContent = nome + " - " + quantidade;
+item.textContent = nome + " - " + quantidade;
 
+// botão remover
+let botao = document.createElement("button");
+botao.textContent = "Remover";
+
+botao.onclick = function() {
+  lista.removeChild(item);
+};
+
+item.appendChild(botao);
   lista.appendChild(item);
 
   // limpar campos

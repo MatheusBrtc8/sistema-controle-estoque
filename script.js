@@ -8,4 +8,8 @@ function adicionarProduto() {
   item.textContent = nome + " - " + quantidade;
 
   lista.appendChild(item);
+
+  // limpar campos
+  document.getElementById("produto").value = "";
+  document.getElementById("quantidade").value = "";
 }

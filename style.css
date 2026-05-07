@@ -1,65 +1,77 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  background-color: #f5f6fa;
   margin: 0;
-  padding: 0;
 }
 
+/* Container principal */
 .container {
-  max-width: 500px;
+  max-width: 600px;
   margin: 50px auto;
-  background: white;
-  padding: 20px;
+  background: #ffffff;
+  padding: 25px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
+/* Título */
 h1 {
   text-align: center;
+  margin-bottom: 20px;
   color: #333;
 }
 
+/* Formulário */
 .form {
   display: flex;
-  flex-direction: column;
   gap: 10px;
+  margin-bottom: 20px;
 }
 
 input {
+  flex: 1;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
 
+/* Botão principal (amarelo) */
 button {
-  padding: 10px;
+  background-color: #f1c40f;
   border: none;
-  background-color: #007BFF;
-  color: white;
+  padding: 10px 15px;
   border-radius: 5px;
   cursor: pointer;
+  font-weight: bold;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #d4ac0d;
 }
 
+/* Lista */
 ul {
-  margin-top: 20px;
-  padding: 0;
   list-style: none;
+  padding: 0;
 }
 
+/* Itens */
 li {
-  background: #eee;
-  padding: 10px;
+  background: #f8f9fa;
+  padding: 12px;
   margin-bottom: 10px;
-  border-radius: 5px;
+  border-radius: 6px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+/* Botão remover */
 li button {
-  background-color: red;
+  background-color: #e74c3c;
+  color: white;
+}
+
+li button:hover {
+  background-color: #c0392b;
 }
